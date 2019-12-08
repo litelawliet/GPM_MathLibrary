@@ -1,4 +1,3 @@
-GPM2_LKORMOKP
 Static Math library written by :
 - Filipe ANTUNES DA SILVA
 - Lilian GADEAU
@@ -10,3 +9,5 @@ All you need to use this math library is to include "GPM/GPM.h", and link your p
 
 
 Everything is within a namespace called GPM, you can even find a Tools namespace inside of it for Degree to Radian conversion, cosinus, sinus, square root and more. There is also a wrapping tool call Random for generating random numbers from the STL.
+
+Note : If you want to try this library using the MathTestProject project, just make sure that this project is the default running project in the solution.

@@ -1,7 +1,27 @@
 var searchData=
 [
-  ['vector2_120',['Vector2',['../struct_g_p_m_1_1_vector2.html',1,'GPM::Vector2&lt; T &gt;'],['../struct_g_p_m_1_1_vector2.html#a0f7a1d4e359f9852a008bc2e781d66c8',1,'GPM::Vector2::Vector2()'],['../struct_g_p_m_1_1_vector2.html#a7e5f80d99b65d9b935ec7c3cd1805518',1,'GPM::Vector2::Vector2(const T p_x, const T p_y)'],['../struct_g_p_m_1_1_vector2.html#ad6d3e985c5740f2b5939db9397c4b1f8',1,'GPM::Vector2::Vector2(const Vector2 &amp;p_other)'],['../struct_g_p_m_1_1_vector2.html#a72df3ee52a03dd0060d47a542fe2897f',1,'GPM::Vector2::Vector2(Vector2 &amp;&amp;p_other) noexcept']]],
-  ['vector3_121',['Vector3',['../struct_g_p_m_1_1_vector3.html',1,'GPM::Vector3&lt; T &gt;'],['../struct_g_p_m_1_1_vector3.html#a3ecb33e9c32fb97b2b0bed7cc0a6f0f1',1,'GPM::Vector3::Vector3(const T p_x, const T p_y, const T p_z)'],['../struct_g_p_m_1_1_vector3.html#a05ed8945bc153a9ea9d60e84bcd25017',1,'GPM::Vector3::Vector3(const Vector3&lt; U &gt; &amp;p_other)'],['../struct_g_p_m_1_1_vector3.html#a2b212cb65120c68c174b5d3384330500',1,'GPM::Vector3::Vector3(Vector3&lt; U &gt; &amp;&amp;p_other) noexcept'],['../struct_g_p_m_1_1_vector3.html#a77f2677babfc5f59c393ce389ed34766',1,'GPM::Vector3::Vector3()=default']]],
-  ['vector3_3c_20double_20_3e_122',['Vector3&lt; double &gt;',['../struct_g_p_m_1_1_vector3.html',1,'GPM']]],
-  ['vector4_123',['Vector4',['../struct_g_p_m_1_1_vector4.html',1,'GPM::Vector4&lt; T &gt;'],['../struct_g_p_m_1_1_vector4.html#acee225cdb2a7476d73edc8e99ca11c17',1,'GPM::Vector4::Vector4()'],['../struct_g_p_m_1_1_vector4.html#a0aa8b53e1c428ba5a97c7af5983c44d4',1,'GPM::Vector4::Vector4(const T p_x, const T p_y, const T p_z, const T p_w=1.0f)'],['../struct_g_p_m_1_1_vector4.html#a2674c561b18e63af69b310177fe04241',1,'GPM::Vector4::Vector4(const Vector3&lt; T &gt; &amp;p_other)'],['../struct_g_p_m_1_1_vector4.html#ad7da65fa45171543e7c09eed2319388f',1,'GPM::Vector4::Vector4(Vector3&lt; T &gt; &amp;&amp;p_other)'],['../struct_g_p_m_1_1_vector4.html#af0443c072da0b6c1102cbfb4ae8b636a',1,'GPM::Vector4::Vector4(const Vector4&lt; T &gt; &amp;p_other)'],['../struct_g_p_m_1_1_vector4.html#a191f01333a3a8bf65beef409cbe72c77',1,'GPM::Vector4::Vector4(Vector4&lt; T &gt; &amp;&amp;p_other) noexcept']]]
+  ['vector2_155',['Vector2',['../struct_g_p_m_1_1_vector2.html',1,'GPM::Vector2&lt; T &gt;'],['../struct_g_p_m_1_1_vector2.html#a0f7a1d4e359f9852a008bc2e781d66c8',1,'GPM::Vector2::Vector2()'],['../struct_g_p_m_1_1_vector2.html#a7e5f80d99b65d9b935ec7c3cd1805518',1,'GPM::Vector2::Vector2(const T p_x, const T p_y)'],['../struct_g_p_m_1_1_vector2.html#ad6d3e985c5740f2b5939db9397c4b1f8',1,'GPM::Vector2::Vector2(const Vector2 &amp;p_other)'],['../struct_g_p_m_1_1_vector2.html#a72df3ee52a03dd0060d47a542fe2897f',1,'GPM::Vector2::Vector2(Vector2 &amp;&amp;p_other) noexcept']]],
+  ['vector2_2eh_156',['Vector2.h',['../_vector2_8h.html',1,'']]],
+  ['vector2_2einl_157',['Vector2.inl',['../_vector2_8inl.html',1,'']]],
+  ['vector2d_158',['Vector2D',['../namespace_g_p_m.html#a40327c52ff718d703fa2c377e8bc8ac6',1,'GPM']]],
+  ['vector2f_159',['Vector2F',['../namespace_g_p_m.html#a756281b001e734d688a43717555e63db',1,'GPM']]],
+  ['vector2i_160',['Vector2I',['../namespace_g_p_m.html#abda719eba89e045ae980b08c31de7f0e',1,'GPM']]],
+  ['vector2l_161',['Vector2L',['../namespace_g_p_m.html#af2a237f5175fa3c38fd866fbfb95ba4c',1,'GPM']]],
+  ['vector2u_162',['Vector2U',['../namespace_g_p_m.html#aa2a7ae94388d9f17405813f83f7bd96e',1,'GPM']]],
+  ['vector3_163',['Vector3',['../struct_g_p_m_1_1_vector3.html',1,'GPM::Vector3&lt; T &gt;'],['../struct_g_p_m_1_1_vector3.html#a3ecb33e9c32fb97b2b0bed7cc0a6f0f1',1,'GPM::Vector3::Vector3(const T p_x, const T p_y, const T p_z)'],['../struct_g_p_m_1_1_vector3.html#a05ed8945bc153a9ea9d60e84bcd25017',1,'GPM::Vector3::Vector3(const Vector3&lt; U &gt; &amp;p_other)'],['../struct_g_p_m_1_1_vector3.html#a2b212cb65120c68c174b5d3384330500',1,'GPM::Vector3::Vector3(Vector3&lt; U &gt; &amp;&amp;p_other) noexcept'],['../struct_g_p_m_1_1_vector3.html#a77f2677babfc5f59c393ce389ed34766',1,'GPM::Vector3::Vector3()=default']]],
+  ['vector3_2eh_164',['Vector3.h',['../_vector3_8h.html',1,'']]],
+  ['vector3_2einl_165',['Vector3.inl',['../_vector3_8inl.html',1,'']]],
+  ['vector3_3c_20double_20_3e_166',['Vector3&lt; double &gt;',['../struct_g_p_m_1_1_vector3.html',1,'GPM']]],
+  ['vector3d_167',['Vector3D',['../namespace_g_p_m.html#aa50ac97bca2cb980ebe38a2f7c3b1c46',1,'GPM']]],
+  ['vector3f_168',['Vector3F',['../namespace_g_p_m.html#a0c3a81ad74c8cec9222506790fd8aed7',1,'GPM']]],
+  ['vector3i_169',['Vector3I',['../namespace_g_p_m.html#a5a82d5184a47622b6144dcd58bc32691',1,'GPM']]],
+  ['vector3l_170',['Vector3L',['../namespace_g_p_m.html#a0dd1a2fb9d227766bb20273b6a59124a',1,'GPM']]],
+  ['vector3u_171',['Vector3U',['../namespace_g_p_m.html#ab1a58eb5d51b921e8417cef6af1d8c94',1,'GPM']]],
+  ['vector4_172',['Vector4',['../struct_g_p_m_1_1_vector4.html',1,'GPM::Vector4&lt; T &gt;'],['../struct_g_p_m_1_1_vector4.html#acee225cdb2a7476d73edc8e99ca11c17',1,'GPM::Vector4::Vector4()'],['../struct_g_p_m_1_1_vector4.html#a0aa8b53e1c428ba5a97c7af5983c44d4',1,'GPM::Vector4::Vector4(const T p_x, const T p_y, const T p_z, const T p_w=1.0f)'],['../struct_g_p_m_1_1_vector4.html#a2674c561b18e63af69b310177fe04241',1,'GPM::Vector4::Vector4(const Vector3&lt; T &gt; &amp;p_other)'],['../struct_g_p_m_1_1_vector4.html#ad7da65fa45171543e7c09eed2319388f',1,'GPM::Vector4::Vector4(Vector3&lt; T &gt; &amp;&amp;p_other)'],['../struct_g_p_m_1_1_vector4.html#af0443c072da0b6c1102cbfb4ae8b636a',1,'GPM::Vector4::Vector4(const Vector4&lt; T &gt; &amp;p_other)'],['../struct_g_p_m_1_1_vector4.html#a191f01333a3a8bf65beef409cbe72c77',1,'GPM::Vector4::Vector4(Vector4&lt; T &gt; &amp;&amp;p_other) noexcept']]],
+  ['vector4_2eh_173',['Vector4.h',['../_vector4_8h.html',1,'']]],
+  ['vector4_2einl_174',['Vector4.inl',['../_vector4_8inl.html',1,'']]],
+  ['vector4d_175',['Vector4D',['../namespace_g_p_m.html#a3a6192b586830a9d54962efac3d3bc9c',1,'GPM']]],
+  ['vector4f_176',['Vector4F',['../namespace_g_p_m.html#acf55da339a7b86a5e2aa674353d67cb3',1,'GPM']]],
+  ['vector4i_177',['Vector4I',['../namespace_g_p_m.html#a888fd9203253b9b34dc50b2ea99fbbdf',1,'GPM']]],
+  ['vector4l_178',['Vector4L',['../namespace_g_p_m.html#a04b0e4eb3d8916de09d90f329d57808a',1,'GPM']]]
 ];

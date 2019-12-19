@@ -42,6 +42,7 @@ var struct_g_p_m_1_1_quaternion =
     [ "operator=", "struct_g_p_m_1_1_quaternion.html#ae7fb2653620ec412db5934f3978e1715", null ],
     [ "operator=", "struct_g_p_m_1_1_quaternion.html#a72f1c88727fce3405dcd84f8099f70de", null ],
     [ "operator==", "struct_g_p_m_1_1_quaternion.html#a87ffb14c0f80de9b372533ded26c4ea3", null ],
+    [ "operator[]", "struct_g_p_m_1_1_quaternion.html#af6e8a453a27f17b44c3109535f5ce25c", null ],
     [ "RotateRelativeToPivot", "struct_g_p_m_1_1_quaternion.html#aa82020d0cd24a32909de050c1eee94b6", null ],
     [ "RotateVector", "struct_g_p_m_1_1_quaternion.html#a5d6c5e4fc6ebed7c87ac65d859d6d910", null ],
     [ "SetRealValue", "struct_g_p_m_1_1_quaternion.html#addc1675e89ca3db9bbca7cb60c9c95b8", null ],

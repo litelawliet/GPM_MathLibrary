@@ -23,6 +23,15 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "GPM Math Library", "index.html", [
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -40,8 +49,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html",
-"struct_g_p_m_1_1_vector2.html#aa976c5a7afa257fa2c4c80839ab2bc6e"
+"_g_p_m_8cpp.html",
+"struct_g_p_m_1_1_matrix4.html#a27f4bd420a713a7baa894cf7502ce089"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

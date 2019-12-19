@@ -32,7 +32,7 @@
    <div id="projectname">GPM Math Library
    &#160;<span id="projectnumber">1.1</span>
    </div>
-   <div id="projectbrief">Math library made at ISART Digital Montreal in collaboration of all the classmates for our future projects. Promotion 2022.</div>
+   <div id="projectbrief">Math library made in collaraboration of the entire class of promotion GP2022 of ISART Digital Montreal</div>
   </td>
  </tr>
  </tbody>
@@ -96,9 +96,13 @@ $(document).ready(function(){initNavTree('struct_g_p_m_1_1_quaternion.html','');
 <div class="title">GPM::Quaternion Struct Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_quaternion_8h_source.html">Quaternion.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a134f1f9b5f30c981ca4e0462ff1f57bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a134f1f9b5f30c981ca4e0462ff1f57bf">Quaternion</a> ()</td></tr>
+<tr class="separator:a134f1f9b5f30c981ca4e0462ff1f57bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad864b33ab48516b4734552986529fb1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#ad864b33ab48516b4734552986529fb1b">Quaternion</a> (const double p_x, const double p_y, const double p_z, const double p_w)</td></tr>
 <tr class="memdesc:ad864b33ab48516b4734552986529fb1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor using all values.  <a href="struct_g_p_m_1_1_quaternion.html#ad864b33ab48516b4734552986529fb1b">More...</a><br /></td></tr>
 <tr class="separator:ad864b33ab48516b4734552986529fb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7075733d4fa0d35dab5766f10a7fd6b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a7075733d4fa0d35dab5766f10a7fd6b5">Quaternion</a> (const <a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt; &amp;p_axis, const double p_angleInRadians)</td></tr>
 <tr class="memdesc:a7075733d4fa0d35dab5766f10a7fd6b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constuct a quaternion from axis and angle in radian.  <a href="struct_g_p_m_1_1_quaternion.html#a7075733d4fa0d35dab5766f10a7fd6b5">More...</a><br /></td></tr>
 <tr class="separator:a7075733d4fa0d35dab5766f10a7fd6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c676b750daf63f9145b2e7ec6535bba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a7c676b750daf63f9145b2e7ec6535bba">~Quaternion</a> ()=default</td></tr>
+<tr class="separator:a7c676b750daf63f9145b2e7ec6535bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8918e4f10c64ffc1cb4b6bffd91fd1d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a8918e4f10c64ffc1cb4b6bffd91fd1d5">MakeFromEuler</a> (const <a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt; &amp;p_euler)</td></tr>
 <tr class="memdesc:a8918e4f10c64ffc1cb4b6bffd91fd1d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from euler angles.  <a href="struct_g_p_m_1_1_quaternion.html#a8918e4f10c64ffc1cb4b6bffd91fd1d5">More...</a><br /></td></tr>
 <tr class="separator:a8918e4f10c64ffc1cb4b6bffd91fd1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,38 +153,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99e82e163d1649b9b4622a991a2bad4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a99e82e163d1649b9b4622a991a2bad4e">operator!=</a> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion) const</td></tr>
 <tr class="memdesc:a99e82e163d1649b9b4622a991a2bad4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check is all components between the current quaternion and the other one are different.  <a href="struct_g_p_m_1_1_quaternion.html#a99e82e163d1649b9b4622a991a2bad4e">More...</a><br /></td></tr>
 <tr class="separator:a99e82e163d1649b9b4622a991a2bad4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa533df832686948443a226ecaa894ded"><td class="memItemLeft" align="right" valign="top"><a id="aa533df832686948443a226ecaa894ded"></a>
-<a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion) const</td></tr>
+<tr class="memitem:aa533df832686948443a226ecaa894ded"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#aa533df832686948443a226ecaa894ded">operator+</a> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion) const</td></tr>
 <tr class="separator:aa533df832686948443a226ecaa894ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba56eadca23a60a2a0cb4cc01ee80be0"><td class="memItemLeft" align="right" valign="top"><a id="aba56eadca23a60a2a0cb4cc01ee80be0"></a>
-<a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion)</td></tr>
+<tr class="memitem:aba56eadca23a60a2a0cb4cc01ee80be0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#aba56eadca23a60a2a0cb4cc01ee80be0">operator+=</a> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion)</td></tr>
 <tr class="separator:aba56eadca23a60a2a0cb4cc01ee80be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aa47e9e830a4cbc1c78145c62e47413"><td class="memItemLeft" align="right" valign="top"><a id="a2aa47e9e830a4cbc1c78145c62e47413"></a>
-<a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion) const</td></tr>
+<tr class="memitem:a2aa47e9e830a4cbc1c78145c62e47413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a2aa47e9e830a4cbc1c78145c62e47413">operator-</a> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion) const</td></tr>
 <tr class="separator:a2aa47e9e830a4cbc1c78145c62e47413"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba7430e66dc1ed71dda0639ae286eef3"><td class="memItemLeft" align="right" valign="top"><a id="aba7430e66dc1ed71dda0639ae286eef3"></a>
-<a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-=</b> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion)</td></tr>
+<tr class="memitem:aba7430e66dc1ed71dda0639ae286eef3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#aba7430e66dc1ed71dda0639ae286eef3">operator-=</a> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion)</td></tr>
 <tr class="separator:aba7430e66dc1ed71dda0639ae286eef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eaf8e9b4193d6a3b73b30f206349ecc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a3eaf8e9b4193d6a3b73b30f206349ecc">DotProduct</a> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion) const</td></tr>
 <tr class="memdesc:a3eaf8e9b4193d6a3b73b30f206349ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the dot product between the current quaternion and another one.  <a href="struct_g_p_m_1_1_quaternion.html#a3eaf8e9b4193d6a3b73b30f206349ecc">More...</a><br /></td></tr>
 <tr class="separator:a3eaf8e9b4193d6a3b73b30f206349ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36ba8e47e817d6cad9523f0ef788792a"><td class="memItemLeft" align="right" valign="top"><a id="a36ba8e47e817d6cad9523f0ef788792a"></a>
-<a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const double p_scale) const</td></tr>
+<tr class="memitem:a36ba8e47e817d6cad9523f0ef788792a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a36ba8e47e817d6cad9523f0ef788792a">operator*</a> (const double p_scale) const</td></tr>
 <tr class="separator:a36ba8e47e817d6cad9523f0ef788792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e47871be30dc0377fb2fa9479d94f6c"><td class="memItemLeft" align="right" valign="top"><a id="a5e47871be30dc0377fb2fa9479d94f6c"></a>
-<a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (const double p_scale)</td></tr>
+<tr class="memitem:a5e47871be30dc0377fb2fa9479d94f6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a5e47871be30dc0377fb2fa9479d94f6c">operator*=</a> (const double p_scale)</td></tr>
 <tr class="separator:a5e47871be30dc0377fb2fa9479d94f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40857adc42a3c99c781ca51a98e4a25d"><td class="memItemLeft" align="right" valign="top"><a id="a40857adc42a3c99c781ca51a98e4a25d"></a>
-<a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion) const</td></tr>
+<tr class="memitem:a40857adc42a3c99c781ca51a98e4a25d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a40857adc42a3c99c781ca51a98e4a25d">operator*</a> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion) const</td></tr>
 <tr class="separator:a40857adc42a3c99c781ca51a98e4a25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6deab7aefc02fc91cfdac60ef8ec5b0e"><td class="memItemLeft" align="right" valign="top"><a id="a6deab7aefc02fc91cfdac60ef8ec5b0e"></a>
-<a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion)</td></tr>
+<tr class="memitem:a6deab7aefc02fc91cfdac60ef8ec5b0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a6deab7aefc02fc91cfdac60ef8ec5b0e">operator*=</a> (const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;p_otherQuaternion)</td></tr>
 <tr class="separator:a6deab7aefc02fc91cfdac60ef8ec5b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7f07a2e6230a74fe9cc8a7fd4ee7690"><td class="memItemLeft" align="right" valign="top"><a id="ad7f07a2e6230a74fe9cc8a7fd4ee7690"></a>
-<a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt; &amp;p_toMultiply) const</td></tr>
+<tr class="memitem:ad7f07a2e6230a74fe9cc8a7fd4ee7690"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#ad7f07a2e6230a74fe9cc8a7fd4ee7690">operator*</a> (const <a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt; &amp;p_toMultiply) const</td></tr>
 <tr class="separator:ad7f07a2e6230a74fe9cc8a7fd4ee7690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a837ae073d1eb5f383b59c0108893dade"><td class="memItemLeft" align="right" valign="top"><a id="a837ae073d1eb5f383b59c0108893dade"></a>
-<a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (const <a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt; &amp;p_toMultiply)</td></tr>
+<tr class="memitem:a837ae073d1eb5f383b59c0108893dade"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a837ae073d1eb5f383b59c0108893dade">operator*=</a> (const <a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt; &amp;p_toMultiply)</td></tr>
 <tr class="separator:a837ae073d1eb5f383b59c0108893dade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31901682c3179662db46bf6f7ac57126"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a31901682c3179662db46bf6f7ac57126">Normalize</a> ()</td></tr>
 <tr class="memdesc:a31901682c3179662db46bf6f7ac57126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize the current quaternion.  <a href="struct_g_p_m_1_1_quaternion.html#a31901682c3179662db46bf6f7ac57126">More...</a><br /></td></tr>
@@ -235,7 +231,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa82020d0cd24a32909de050c1eee94b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate a point relative to pivot.  <a href="struct_g_p_m_1_1_quaternion.html#aa82020d0cd24a32909de050c1eee94b6">More...</a><br /></td></tr>
 <tr class="separator:aa82020d0cd24a32909de050c1eee94b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d6c5e4fc6ebed7c87ac65d859d6d910"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a5d6c5e4fc6ebed7c87ac65d859d6d910">RotateVector</a> (const <a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt; &amp;p_toRotate) const</td></tr>
+<tr class="memdesc:a5d6c5e4fc6ebed7c87ac65d859d6d910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotate a vector around another one.  <a href="struct_g_p_m_1_1_quaternion.html#a5d6c5e4fc6ebed7c87ac65d859d6d910">More...</a><br /></td></tr>
 <tr class="separator:a5d6c5e4fc6ebed7c87ac65d859d6d910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e8a453a27f17b44c3109535f5ce25c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#af6e8a453a27f17b44c3109535f5ce25c">operator[]</a> (const int p_index) const</td></tr>
+<tr class="memdesc:af6e8a453a27f17b44c3109535f5ce25c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the value aliased with index, just like arrays.  <a href="struct_g_p_m_1_1_quaternion.html#af6e8a453a27f17b44c3109535f5ce25c">More...</a><br /></td></tr>
+<tr class="separator:af6e8a453a27f17b44c3109535f5ce25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9c8f2d1ba00736145cdab9899f36b12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#af9c8f2d1ba00736145cdab9899f36b12">ToUnitNormQuaternion</a> ()</td></tr>
 <tr class="memdesc:af9c8f2d1ba00736145cdab9899f36b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform the current quaternion to a unit quaternion.  <a href="struct_g_p_m_1_1_quaternion.html#af9c8f2d1ba00736145cdab9899f36b12">More...</a><br /></td></tr>
 <tr class="separator:af9c8f2d1ba00736145cdab9899f36b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,16 +302,44 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a70d278460310c296f44d04f8f8be863d"><td class="memItemLeft" align="right" valign="top"><a id="a70d278460310c296f44d04f8f8be863d"></a>
-<a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>axis</b></td></tr>
+<tr class="memitem:a70d278460310c296f44d04f8f8be863d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#a70d278460310c296f44d04f8f8be863d">axis</a></td></tr>
 <tr class="separator:a70d278460310c296f44d04f8f8be863d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1a3a64001caafeb89507ef830072a9c"><td class="memItemLeft" align="right" valign="top"><a id="aa1a3a64001caafeb89507ef830072a9c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
+<tr class="memitem:aa1a3a64001caafeb89507ef830072a9c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_p_m_1_1_quaternion.html#aa1a3a64001caafeb89507ef830072a9c">w</a></td></tr>
 <tr class="separator:aa1a3a64001caafeb89507ef830072a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="_quaternion_8h_source.html#l00006">6</a> of file <a class="el" href="_quaternion_8h_source.html">Quaternion.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a134f1f9b5f30c981ca4e0462ff1f57bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134f1f9b5f30c981ca4e0462ff1f57bf">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GPM::Quaternion::Quaternion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00013">13</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
 <a id="ad864b33ab48516b4734552986529fb1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad864b33ab48516b4734552986529fb1b">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[1/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad864b33ab48516b4734552986529fb1b">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,10 +396,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>In pure/applied Maths, we write W (or real), (Xi + Yj + Zk) (or Vector) </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00017">17</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="ae9ca7e9bc3244750676e81ed02e04d7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9ca7e9bc3244750676e81ed02e04d7c">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[2/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ca7e9bc3244750676e81ed02e04d7c">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,10 +443,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00022">22</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="ab867af019096cdcc509839e298b9ad7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab867af019096cdcc509839e298b9ad7b">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[3/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab867af019096cdcc509839e298b9ad7b">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -447,10 +479,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00026">26</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a2b1f7f9c446b47a8304593b01e37ca9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b1f7f9c446b47a8304593b01e37ca9b">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[4/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b1f7f9c446b47a8304593b01e37ca9b">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,10 +515,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00030">30</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a3e36684490c5052a7b6b9ce3615dbe1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e36684490c5052a7b6b9ce3615dbe1c">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[5/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e36684490c5052a7b6b9ce3615dbe1c">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -515,10 +551,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00034">34</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a21661a03da4c125b68091def2b563fc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21661a03da4c125b68091def2b563fc1">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[6/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a21661a03da4c125b68091def2b563fc1">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[7/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -549,10 +587,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00081">81</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a7075733d4fa0d35dab5766f10a7fd6b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7075733d4fa0d35dab5766f10a7fd6b5">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[7/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7075733d4fa0d35dab5766f10a7fd6b5">&#9670;&nbsp;</a></span>Quaternion() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -594,6 +634,33 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00094">94</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="a7c676b750daf63f9145b2e7ec6535bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c676b750daf63f9145b2e7ec6535bba">&#9670;&nbsp;</a></span>~Quaternion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GPM::Quaternion::~Quaternion </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -622,6 +689,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 
 <p>Conjugate the current quaternion. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current quaternion modified </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00300">300</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -658,6 +727,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new quaternion conjugate </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00307">307</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a87882ad61ea5b1b34ed51be9b62a2ac8"></a>
@@ -685,6 +756,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 
 <p>Convert the current quaternion to unit quaternion. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current quaternion modified </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00312">312</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -732,6 +805,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The quaternion </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00424">424</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a16a428a3566e1eb95265cf18fff2fed9"></a>
@@ -778,6 +853,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00205">205</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a3eaf8e9b4193d6a3b73b30f206349ecc"></a>
@@ -813,6 +890,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00200">200</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a52f3f1a28fd7520a7257e65c4345808e"></a>
@@ -840,6 +919,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 
 <p>Return the w component (real part) </p>
 <dl class="section return"><dt>Returns</dt><dd>The value </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00378">378</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -869,6 +950,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <p>Give the axis of the quaternion. </p>
 <dl class="section return"><dt>Returns</dt><dd>An axis </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00358">358</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a35fa40a4507a56fec2ab78ede2826416"></a>
@@ -896,6 +979,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 
 <p>Return the x value of the axis. </p>
 <dl class="section return"><dt>Returns</dt><dd>The value </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00363">363</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -925,6 +1010,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <p>Return the y value of the axis. </p>
 <dl class="section return"><dt>Returns</dt><dd>The value </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00368">368</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a26f4d6e084232187f0097afc8be7ecff"></a>
@@ -953,6 +1040,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <p>Return the z value of the axis. </p>
 <dl class="section return"><dt>Returns</dt><dd>The value </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00373">373</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a63cf9ffa83e754b75f935cf9b8a74bad"></a>
@@ -980,6 +1069,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 
 <p>Inverse the current quaternion. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current quaternion modified </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00274">274</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -1016,6 +1107,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new quaternion inversed </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00290">290</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="ab594f39dc726085223bee21539983001"></a>
@@ -1044,6 +1137,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <p>Check If the quaternion is Identity. </p>
 <dl class="section note"><dt>Note</dt><dd>If the quaternion has no rotation(meaning x,y,z axis values = 0), it's Identity </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True or false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00149">149</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -1074,6 +1169,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <dl class="section note"><dt>Note</dt><dd>A quaternion is normalized if his magnitude is equal to 1 </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True or false </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00159">159</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="ae3a3603d7a10d61e0d38b4fb79f9ea1a"></a>
@@ -1102,6 +1199,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <p>Check if the quaternion is pure. </p>
 <dl class="section note"><dt>Note</dt><dd>If the quaternion has no real value(meaning real part = 0), it's pure </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True or false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00154">154</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -1156,6 +1255,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The quaternion </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00439">439</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a80f64a9e24b3ee84483d66692f62303f"></a>
@@ -1201,6 +1302,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The quaternion </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00403">403</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -1254,6 +1357,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00125">125</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a8918e4f10c64ffc1cb4b6bffd91fd1d5"></a>
@@ -1287,6 +1392,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00109">109</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -1322,6 +1429,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The result of the multiplication between the two quaternion </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00258">258</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -1376,6 +1485,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The quaternion </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00511">511</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a6540067ff621a654b007315429aa02a3"></a>
@@ -1404,6 +1515,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <p>Norm of a quaternion, alias magnitude. </p>
 <dl class="section return"><dt>Returns</dt><dd>The magnitude </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00269">269</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a31901682c3179662db46bf6f7ac57126"></a>
@@ -1431,6 +1544,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 
 <p>Normalize the current quaternion. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current quaternion modified </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00522">522</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -1467,6 +1582,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A normalized quaternion </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00534">534</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a2ba2a76024b87ab2e38f69ea16d3bdb4"></a>
@@ -1494,6 +1611,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 
 <p>Norm square of a quaternion, alias magnitude square. </p>
 <dl class="section return"><dt>Returns</dt><dd>The magnitude squared </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00517">517</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -1528,6 +1647,288 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00169">169</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="a36ba8e47e817d6cad9523f0ef788792a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ba8e47e817d6cad9523f0ef788792a">&#9670;&nbsp;</a></span>operator*() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> GPM::Quaternion::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>p_scale</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00218">218</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="a40857adc42a3c99c781ca51a98e4a25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40857adc42a3c99c781ca51a98e4a25d">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> GPM::Quaternion::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_otherQuaternion</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00223">223</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="ad7f07a2e6230a74fe9cc8a7fd4ee7690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7f07a2e6230a74fe9cc8a7fd4ee7690">&#9670;&nbsp;</a></span>operator*() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> GPM::Quaternion::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_toMultiply</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00235">235</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="a5e47871be30dc0377fb2fa9479d94f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e47871be30dc0377fb2fa9479d94f6c">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp; GPM::Quaternion::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>p_scale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00210">210</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="a6deab7aefc02fc91cfdac60ef8ec5b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6deab7aefc02fc91cfdac60ef8ec5b0e">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp; GPM::Quaternion::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_otherQuaternion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00228">228</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="a837ae073d1eb5f383b59c0108893dade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a837ae073d1eb5f383b59c0108893dade">&#9670;&nbsp;</a></span>operator*=() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp; GPM::Quaternion::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>p_toMultiply</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00245">245</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="aa533df832686948443a226ecaa894ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa533df832686948443a226ecaa894ded">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> GPM::Quaternion::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_otherQuaternion</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00174">174</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="aba56eadca23a60a2a0cb4cc01ee80be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba56eadca23a60a2a0cb4cc01ee80be0">&#9670;&nbsp;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp; GPM::Quaternion::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_otherQuaternion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00179">179</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="a2aa47e9e830a4cbc1c78145c62e47413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa47e9e830a4cbc1c78145c62e47413">&#9670;&nbsp;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> GPM::Quaternion::operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_otherQuaternion</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00187">187</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="aba7430e66dc1ed71dda0639ae286eef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7430e66dc1ed71dda0639ae286eef3">&#9670;&nbsp;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp; GPM::Quaternion::operator-= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td>
+          <td class="paramname"><em>p_otherQuaternion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00192">192</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -1599,6 +2000,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The current quaternion modified </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00141">141</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a87ffb14c0f80de9b372533ded26c4ea3"></a>
@@ -1632,6 +2035,46 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00164">164</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<a id="af6e8a453a27f17b44c3109535f5ce25c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e8a453a27f17b44c3109535f5ce25c">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GPM::Quaternion::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>p_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the value aliased with index, just like arrays. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_index</td><td>The index to access. 0 = w, 1 = x, 2 = y, 3 = z </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return the value associated at the indicated index </dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a> representation is as follow : [w, x, y, z] </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00343">343</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -1794,6 +2237,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Rotate a vector around another one. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_toRotate</td><td></td></tr>
@@ -1855,6 +2300,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The vector rotated </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00323">323</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="addc1675e89ca3db9bbca7cb60c9c95b8"></a>
@@ -1888,6 +2335,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00398">398</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -1923,6 +2372,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00383">383</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="aacea349183d79c3d47afe600b7679ff4"></a>
@@ -1957,6 +2408,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00388">388</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a28e63ed1b83c02c1255e5dca68082bce"></a>
@@ -1990,6 +2443,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00393">393</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -2044,6 +2499,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The quaternion </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00451">451</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="afafd55d40b35297e8e1b0f3daf12442c"></a>
@@ -2097,6 +2554,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The quaternion </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00476">476</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="af3f0597db46a0aefb5d684e9b64bff20"></a>
@@ -2124,6 +2583,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 
 <p>Transform the current quaternion to euler angles in degrees. </p>
 <dl class="section return"><dt>Returns</dt><dd>A vector containing each angles </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00559">559</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -2153,6 +2614,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <p>Return a <a class="el" href="struct_g_p_m_1_1_matrix3.html">Matrix3</a> of double out of the quaternion. </p>
 <dl class="section return"><dt>Returns</dt><dd>The Matrix3&lt;float&gt; </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00622">622</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="ae1c1f298497e9ef2294fc7eca5f7ae8d"></a>
@@ -2180,6 +2643,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 
 <p>Return a <a class="el" href="struct_g_p_m_1_1_matrix4.html">Matrix4</a> of double out of the quaternion. </p>
 <dl class="section return"><dt>Returns</dt><dd>The Matrix4&lt;float&gt; </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00647">647</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -2234,6 +2699,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The quaternion </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00592">592</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="abb793bcd00763c1a4a6741177d1e5a6b"></a>
@@ -2269,6 +2736,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The quaternion </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00587">587</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="a017531fc2f7b1bb3375ef92949b4eb32"></a>
@@ -2296,6 +2765,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 
 <p>Transform the current quaternion to string. </p>
 <dl class="section return"><dt>Returns</dt><dd>The converted string </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00611">611</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
 
 </div>
 </div>
@@ -2332,6 +2803,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The converted string </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00617">617</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
 </div>
 </div>
 <a id="af9c8f2d1ba00736145cdab9899f36b12"></a>
@@ -2360,18 +2833,53 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
 <p>Transform the current quaternion to a unit quaternion. </p>
 <dl class="section return"><dt>Returns</dt><dd>The quaternion </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="_quaternion_8inl_source.html#l00550">550</a> of file <a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a70d278460310c296f44d04f8f8be863d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70d278460310c296f44d04f8f8be863d">&#9670;&nbsp;</a></span>axis</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_p_m_1_1_vector3.html">Vector3</a>&lt;double&gt; GPM::Quaternion::axis</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8h_source.html#l00008">8</a> of file <a class="el" href="_quaternion_8h_source.html">Quaternion.h</a>.</p>
+
+</div>
+</div>
+<a id="aa1a3a64001caafeb89507ef830072a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a3a64001caafeb89507ef830072a9c">&#9670;&nbsp;</a></span>w</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double GPM::Quaternion::w</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_quaternion_8h_source.html#l00010">10</a> of file <a class="el" href="_quaternion_8h_source.html">Quaternion.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>GPM/include/GPM/Quaternion/<a class="el" href="_quaternion_8h_source.html">Quaternion.h</a></li>
-<li>GPM/include/GPM/Quaternion/Quaternion.inl</li>
+<li>GPM/include/GPM/Quaternion/<a class="el" href="_quaternion_8inl_source.html">Quaternion.inl</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>GPM</b></li><li class="navelem"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a></li>
+    <li class="navelem"><a class="el" href="namespace_g_p_m.html">GPM</a></li><li class="navelem"><a class="el" href="struct_g_p_m_1_1_quaternion.html">Quaternion</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

@@ -19,6 +19,7 @@ var struct_g_p_m_1_1_vector2 =
     [ "operator=", "struct_g_p_m_1_1_vector2.html#a8f0fa7890b60508c6cb2c640b99eb5a2", null ],
     [ "operator=", "struct_g_p_m_1_1_vector2.html#af423b1302ac581fc1bfbdd2588a4403b", null ],
     [ "operator==", "struct_g_p_m_1_1_vector2.html#ae4b760e1642d9614f9131b6770810a37", null ],
+    [ "operator[]", "struct_g_p_m_1_1_vector2.html#a34882aee3c59865b7786a7ae78aa9d17", null ],
     [ "Perpendicular", "struct_g_p_m_1_1_vector2.html#af92ea5f7ab33b000d6bb64551cdb7d80", null ],
     [ "Scale", "struct_g_p_m_1_1_vector2.html#a1af904d3ad6797c67e171f53e33f0d10", null ],
     [ "Set", "struct_g_p_m_1_1_vector2.html#aa976c5a7afa257fa2c4c80839ab2bc6e", null ],

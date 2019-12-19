@@ -28,6 +28,7 @@ var struct_g_p_m_1_1_vector3 =
     [ "operator/=", "struct_g_p_m_1_1_vector3.html#a594108164349dcb4d0b47de3845d5e9d", null ],
     [ "operator=", "struct_g_p_m_1_1_vector3.html#a86d6755879a109961fb8d09c4be2d002", null ],
     [ "operator==", "struct_g_p_m_1_1_vector3.html#a329cb4d28e4ff7711ab2fa3686b599bb", null ],
+    [ "operator[]", "struct_g_p_m_1_1_vector3.html#a28e9901941fd9d72b4166bacc6a68d34", null ],
     [ "Scale", "struct_g_p_m_1_1_vector3.html#ad22d10b4200261fc8404927cae433216", null ],
     [ "Set", "struct_g_p_m_1_1_vector3.html#af2c2c477622ecd7bebe0d98134634fde", null ],
     [ "Subtract", "struct_g_p_m_1_1_vector3.html#a69d010c583c1b31cd90cde0a3ad00a34", null ],

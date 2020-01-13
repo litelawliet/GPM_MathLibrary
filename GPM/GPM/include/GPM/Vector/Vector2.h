@@ -36,13 +36,13 @@ namespace GPM
 		 * @brief Copy Constructor
 		 * @param p_other The vector to construct from
 		 */
-		constexpr Vector2(const Vector2& p_other);
+		constexpr Vector2(const Vector2<T>& p_other);
 
 		/**
 		 * @brief Move Constructor
 		 * @param p_other The vector to construct from
 		 */
-		constexpr Vector2(Vector2&& p_other) noexcept;
+		constexpr Vector2(Vector2<T>&& p_other) noexcept;
 
 		/**
 		 * @brief Set this Vector's values x, y to p_x, p_y
@@ -69,22 +69,44 @@ namespace GPM
 		 * @param p_other The vector used for the checkup
 		 * @return True or false
 		 */
-		constexpr bool operator==(const Vector2<T>& p_other);
+		constexpr bool operator==(const Vector2<T>& p_other) const;
 
 		/**
 		* @brief Return false if the two vectors are identical
 		* @param p_other The vector used for the checkup
 		* @return True or false
 		*/
-		constexpr bool operator!=(const Vector2<T>& p_other);
+		constexpr bool operator!=(const Vector2<T>& p_other) const;
+
+		/**
+		 * @brief Overload = operator by copy
+		 * @param p_other The vector to construct from
+		 * @return The current vector modified
+		 */
+		constexpr Vector2<T>& operator=(const Vector2<T>& p_other);
+		
+		/**
+		 * @brief Overload = operator by copy
+		 * @param p_other The vector to construct from
+		 * @return The current vector modified
+		 */
+		template <typename U>
+		constexpr Vector2<T>& operator=(const Vector2<U>& p_other);
 
 		/**
 		 * @brief Overload = operator by move
 		 * @param p_other The vector to construct from
 		 * @return The current vector modified
 		 */
+		inline constexpr GPM::Vector2<T>& operator=(Vector2<T>&& p_other);
+		
+		/**
+		 * @brief Overload = operator by move
+		 * @param p_other The vector to construct from
+		 * @return The current vector modified
+		 */
 		template <typename U>
-		constexpr Vector2<T>& operator=(const Vector2<U>& p_other);
+		inline constexpr GPM::Vector2<T>& operator=(Vector2<U>&& p_other);
 
 #pragma endregion
 

@@ -12,10 +12,10 @@ template<typename T>
 inline constexpr GPM::Vector2<T>::Vector2(const T p_x, const T p_y) : x{ p_x }, y{ p_y } {}
 
 template<typename T>
-inline constexpr GPM::Vector2<T>::Vector2(const Vector2& p_other) : x{ p_other.x }, y{ p_other.y } {}
+inline constexpr GPM::Vector2<T>::Vector2(const Vector2<T>& p_other) : x{ p_other.x }, y{ p_other.y } {}
 
 template<typename T>
-inline constexpr GPM::Vector2<T>::Vector2(Vector2&& p_other) noexcept
+inline constexpr GPM::Vector2<T>::Vector2(Vector2<T>&& p_other) noexcept
 {
 	*this = p_other;
 }
@@ -37,7 +37,7 @@ const GPM::Vector2<T> GPM::Vector2<T>::right = Vector2<T>{ 1, 0 };
 #pragma region Member Operator Overloads
 
 template<typename T>
-inline constexpr bool GPM::Vector2<T>::operator==(const Vector2<T>& p_other)
+inline constexpr bool GPM::Vector2<T>::operator==(const Vector2<T>& p_other) const
 {
 	if (x == p_other.x && y == p_other.y)
 		return true;
@@ -46,7 +46,7 @@ inline constexpr bool GPM::Vector2<T>::operator==(const Vector2<T>& p_other)
 }
 
 template<typename T>
-inline constexpr bool GPM::Vector2<T>::operator!=(const Vector2<T>& p_other)
+inline constexpr bool GPM::Vector2<T>::operator!=(const Vector2<T>& p_other) const
 {
 	if (x == p_other.x && y == p_other.y)
 		return false;
@@ -55,8 +55,37 @@ inline constexpr bool GPM::Vector2<T>::operator!=(const Vector2<T>& p_other)
 }
 
 template<typename T>
+inline constexpr GPM::Vector2<T>& GPM::Vector2<T>::operator=(const Vector2<T>& p_other)
+{
+	x = p_other.x;
+	y = p_other.y;
+
+	return *this;
+}
+
+
+template<typename T>
 template<typename U>
 inline constexpr GPM::Vector2<T>& GPM::Vector2<T>::operator=(const Vector2<U>& p_other)
+{
+	x = p_other.x;
+	y = p_other.y;
+
+	return *this;
+}
+
+template<typename T>
+inline constexpr GPM::Vector2<T>& GPM::Vector2<T>::operator=(Vector2<T>&& p_other)
+{
+	x = p_other.x;
+	y = p_other.y;
+
+	return *this;
+}
+
+template<typename T>
+template<typename U>
+inline constexpr GPM::Vector2<T>& GPM::Vector2<T>::operator=(Vector2<U>&& p_other)
 {
 	x = p_other.x;
 	y = p_other.y;

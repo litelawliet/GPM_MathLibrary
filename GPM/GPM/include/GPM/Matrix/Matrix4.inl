@@ -275,11 +275,33 @@ constexpr Matrix4<T> Matrix4<T>::Inverse(const Matrix4<T>& p_matrix)
 }
 
 template<typename T>
-Matrix4<T> Matrix4<T>::LookAt(const Vector3<T>& p_from, const Vector3<T>& p_to, const Vector3<T>& p_up)
+constexpr Matrix4<T> Matrix4<T>::LookAt(const Vector3<T>& p_position, const Vector3<T>& p_target, const Vector3<T>& p_up)
 {
+	const Vector3F w = Vector3F::Normalize(p_target - p_position);
+	const Vector3F u = Vector3F::Normalize(Vector3F::Cross(w, p_up));
+	const Vector3F v = Vector3F::Cross(u, w);
 
+	return
+	{
+		u.x, v.x, -w.x, 0.0f,
+		u.y, v.y, -w.y, 0.0f,
+		u.z, v.z, -w.z, 0.0f,
+		-u.Dot(p_position), -v.Dot(p_position), w.Dot(p_position), 1.0f
+	};
 }
 
+template<typename T>
+constexpr Matrix4<T> Matrix4<T>::Perspective(const float p_fovy, const float p_aspectRatio, const float p_near, const float p_far)
+{
+	const float tanHalfFovy = Tools::Utils::TanF(p_fovy / static_cast<T>(2));
+	return
+	{
+		static_cast<T>(1) / (p_aspectRatio * tanHalfFovy), 0.0f, 0.0f, 0.0f,
+		0.0f, static_cast<T>(1) / tanHalfFovy, 0.0f, 0.0f,
+		0.0f, 0.0f, p_far / (p_far - p_near), static_cast<T>(1),
+		0.0f, 0.0f, -(p_far * p_near) / (p_far - p_near), 0.0f
+	};
+}
 
 #pragma endregion 
 

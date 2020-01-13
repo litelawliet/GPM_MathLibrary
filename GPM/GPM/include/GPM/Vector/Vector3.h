@@ -92,6 +92,12 @@ namespace GPM
          * @return The current vector modified
          */
         constexpr void Normalize();
+
+		/**
+		 * @brief Normalize current vector
+		 * @return The current vector modified
+		 */
+        static constexpr Vector3<T> Normalize(const Vector3<T>& p_vector);
         /**
          * @brief Normalized 
          * @return the copy of Normalized vector

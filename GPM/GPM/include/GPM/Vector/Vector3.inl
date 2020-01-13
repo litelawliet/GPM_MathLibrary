@@ -104,8 +104,21 @@ namespace GPM
 	template<typename T>
 	constexpr void Vector3<T>::Normalize()
 	{
+		if (Magnitude() == 0.0f)
+			Set(x, y, z);
+
 		Set(x / Magnitude(), y / Magnitude(), z / Magnitude());
 	}
+
+	template<typename T>
+	constexpr Vector3<T> Vector3<T>::Normalize(const Vector3<T>& p_vector)
+	{
+		if (p_vector.Magnitude() == 0.0f)
+			return { p_vector.x, p_vector.y, p_vector.z };
+
+		return { p_vector.x / p_vector.Magnitude(), p_vector.y / p_vector.Magnitude(), p_vector.z / p_vector.Magnitude() };
+	}
+
 	template <typename T>
 	template <typename U>
 	constexpr Vector3<T> Vector3<T>::Cross(const Vector3<U>& p_other) const
@@ -187,8 +200,8 @@ namespace GPM
 	template<typename U>
 	constexpr T Vector3<T>::Dot(const Vector3<U>& p_other) const
 	{
-		Vector3<T> tmp = p_other.Normalized();
-		Vector3<T> tmp2 = Normalized();
+		Vector3<T> tmp = p_other;// .Normalized();
+		Vector3<T> tmp2 = *this; //Normalized();
 		return (tmp2.x * tmp.x) + (tmp2.y * tmp.y) + (tmp2.z * tmp.z);
 	}
 
@@ -211,6 +224,8 @@ namespace GPM
 	template<typename T>
 	constexpr Vector3<T> Vector3<T>::Normalized() const
 	{
+		if (Magnitude() == 0.0f)
+			return { x, y, z };
 		return { x / Magnitude(), y / Magnitude(), z / Magnitude() };
 	}
 
@@ -247,9 +262,9 @@ namespace GPM
 	template<typename U>
 	constexpr Vector3<T> Vector3<T>::operator/(const Vector3<U>& p_other) const
 	{
-		if (p_other.x == 0 || p_other.y == 0 || p_other.z == 0 || x == 0 || y == 0 || z == 0)
+		if (p_other.x == 0 || p_other.y == 0 || p_other.z == 0)
 		{
-			std::cout << "Can't divide by zero!\n";
+			std::cerr << "Can't divide by zero!\n";
 			return Vector3<T>(0, 0, 0);
 		}
 		return Vector3<T>(x / p_other.x, y / p_other.y, z / p_other.z);

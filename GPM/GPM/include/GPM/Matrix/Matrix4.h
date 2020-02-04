@@ -97,12 +97,12 @@ namespace GPM
 
         /**
 		 *  @brief View matrix made of the position, target and world's up vector.
-		 *  @param p_position  Position of the camera
+		 *  @param p_eye  Position of the camera
 		 *  @param p_target Point to look at
 		 *  @param p_up Up axis of the world. (x=0, y=1, z=0) by default
 		 *  @return The view matrix
 		 */
-        constexpr static Matrix4<T> LookAt(const Vector3<T>& p_position, const Vector3<T>& p_target, const Vector3<T>& p_up = { 0, 1, 0 });
+        constexpr static Matrix4<T> LookAt(const Vector3<T>& p_eye, const Vector3<T>& p_target, const Vector3<T>& p_up = { 0, 1, 0 });
 
         /**
 		 *  @brief Perspective projection matrix.

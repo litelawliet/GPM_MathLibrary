@@ -316,32 +316,49 @@ constexpr Matrix4<T> Matrix4<T>::Rotate(const Matrix4<T>& p_matrix, const T p_an
 }
 
 template<typename T>
-constexpr Matrix4<T> Matrix4<T>::LookAt(const Vector3<T>& p_position, const Vector3<T>& p_target, const Vector3<T>& p_up)
+constexpr Matrix4<T> Matrix4<T>::LookAt(const Vector3<T>& p_eye, const Vector3<T>& p_target, const Vector3<T>& p_up)
 {
-	const Vector3<T> w = Vector3<T>::Normalize(p_target - p_position);
-	const Vector3<T> u = Vector3<T>::Normalize(Vector3F::Cross(w, p_up));
-	const Vector3<T> v = Vector3<T>::Cross(u, w);
+	const Vector3<T> forward = Vector3<T>::Normalize(p_eye - p_target);
+	const Vector3<T> left = Vector3<T>::Normalize(Vector3<T>::Cross(p_up, forward));
+	const Vector3<T> up = Vector3<T>::Cross(left, forward);
 
-	return
-	{
-		u.x, v.x, -w.x, static_cast<T>(0),
-		u.y, v.y, -w.y, static_cast<T>(0),
-		u.z, v.z, -w.z, static_cast<T>(0),
-		-u.Dot(p_position), -v.Dot(p_position), w.Dot(p_position), static_cast<T>(1)
-	};
+	Matrix4 matrix;
+	memset(matrix.m_data, 0, sizeof(T) * 16);
+	matrix = Matrix4::identity;
+
+	// Rotation part
+	matrix.m_data[0] = left.x;
+	matrix.m_data[4] = left.y;
+	matrix.m_data[8] = left.z;
+	matrix.m_data[1] = up.x;
+	matrix.m_data[5] = up.y;
+	matrix.m_data[9] = up.z;
+	matrix.m_data[2] = forward.x;
+	matrix.m_data[6] = forward.y;
+	matrix.m_data[10] = forward.z;
+
+	// Translation part
+	matrix.m_data[12] = -left.x * p_eye.x - left.y * p_eye.y - left.z * p_eye.z;
+	matrix.m_data[13] = -up.x * p_eye.x - up.y * p_eye.y - up.z * p_eye.z;
+	matrix.m_data[14] = -forward.x * p_eye.x - forward.y * p_eye.y - forward.z * p_eye.z;
+
+	return matrix;
 }
 
 template<typename T>
 constexpr Matrix4<T> Matrix4<T>::Perspective(const T p_fovy, const T p_aspectRatio, const T p_near, const T p_far)
 {
-	T const tanHalfFovy = static_cast<T>(Tools::Utils::Tan(p_fovy / static_cast<T>(2)));
+	const T top = static_cast<T>(Tools::Utils::Tan(p_fovy * static_cast<T>(0.00872664625))* p_near);
 
-	Matrix4<T> result = zero;
-	result(0, 0) = static_cast<T>(1) / (p_aspectRatio * tanHalfFovy);
-	result(1, 1) = static_cast<T>(1) / (tanHalfFovy);
-	result(2, 2) = p_far / (p_near - p_far);
+	Matrix4<T> result;
+	memset(result.m_data, 0, sizeof(T) * 16);
+
+
+	result(0, 0) = p_near / (top * p_aspectRatio);
+	result(1, 1) = p_near / top;
+	result(2, 2) = -(p_far + p_near) / (p_far - p_near);
 	result(2, 3) = -static_cast<T>(1);
-	result(3, 2) = -(p_far * p_near) / (p_far - p_near);
+	result(3, 2) = -(static_cast<T>(2)* p_far* p_near) / (p_far - p_near);
 
 	return result;
 }

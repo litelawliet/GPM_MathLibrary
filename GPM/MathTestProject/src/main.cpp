@@ -6,7 +6,7 @@ int main(const int p_argc, char** p_argv)
 	try
 	{
 		// Try stuff here
-		Matrix4F rot = GPM::Matrix4F::Orthographic(0, 800, 600, 0);
+		Matrix4F rot = GPM::Matrix4F::LookAt(GPM::Vector3F(0, 0, 0), GPM::Vector3F(0, 0, 3), GPM::Vector3F(0, 1, 0));
 
 		std::cout << rot;
 	}

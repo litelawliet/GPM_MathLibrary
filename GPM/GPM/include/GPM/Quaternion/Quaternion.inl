@@ -91,8 +91,21 @@ namespace GPM
 		axis.z *= Tools::Utils::Sign(axis.z * (p_matrix.m_data[4] - p_matrix.m_data[1]));
 	}
 
+	inline Quaternion::Quaternion(const Matrix4<float>& p_matrix)
+		: axis{ 0.0, 0.0, 0.0 }, w{ 1.0 }
+	{
+		w = Tools::Utils::SquareRoot(std::max(0.0, 1.0 + p_matrix.m_data[0] + p_matrix.m_data[5] + p_matrix.m_data[10])) / 2.0;
+		axis.x = Tools::Utils::SquareRoot(std::max(0.0, 1.0 + p_matrix.m_data[0] - p_matrix.m_data[5] - p_matrix.m_data[10])) / 2.0;
+		axis.y = Tools::Utils::SquareRoot(std::max(0.0, 1.0 - p_matrix.m_data[0] + p_matrix.m_data[5] - p_matrix.m_data[10])) / 2.0;
+		axis.z = Tools::Utils::SquareRoot(std::max(0.0, 1.0 - p_matrix.m_data[0] - p_matrix.m_data[5] + p_matrix.m_data[10])) / 2.0;
+
+		axis.x *= Tools::Utils::Sign(axis.x * (p_matrix.m_data[9] - p_matrix.m_data[6]));
+		axis.y *= Tools::Utils::Sign(axis.y * (p_matrix.m_data[2] - p_matrix.m_data[8]));
+		axis.z *= Tools::Utils::Sign(axis.z * (p_matrix.m_data[4] - p_matrix.m_data[1]));
+	}
+
 	inline Quaternion::Quaternion(const Vector3<double>& p_axis,
-		const double p_angleInRadians)
+	                              const double p_angleInRadians)
 		: axis{ 0.0, 0.0, 0.0 }, w{ 1.0 }
 	{
 		const double angleDivided = p_angleInRadians / 2.0;

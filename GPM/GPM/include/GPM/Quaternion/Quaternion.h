@@ -56,6 +56,12 @@ namespace GPM
 		inline Quaternion(const Matrix4<double>& p_matrix);
 
 		/**
+		 * @brief Construct from rotation matrix
+		 * @param p_matrix Rotation matrix
+		 */
+		inline Quaternion(const Matrix4<float>& p_matrix);
+
+		/**
 		 * @brief Constuct a quaternion from axis and angle in radian
 		 * @param p_axis
 		 * @param p_angleInRadians

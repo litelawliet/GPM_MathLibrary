@@ -2,8 +2,7 @@
 
 #include <GPM/Tools/Utils.h>
 #include <stdexcept>
-
-//using namespace GPM;
+#include <iostream>
 
 template<typename T>
 inline constexpr GPM::Vector2<T>::Vector2() : x{ 0 }, y{ 0 } {}
@@ -102,29 +101,29 @@ inline constexpr GPM::Vector2<T>& GPM::Vector2<T>::operator=(Vector2<U>&& p_othe
 template<typename T>
 inline constexpr void GPM::Vector2<T>::Normalize()
 {
-	T magn = Magnitude();
+	const T magnitude = Magnitude();
 
-	if (magn == 0)
-		throw std::logic_error("Vector2::Normalize() got a vector2 magnitude of 0");
+	if (magnitude == 0)
+		*this = zero;
 
-	Divide(magn);
+	Divide(magnitude);
 }
 
 template<typename T>
 inline constexpr GPM::Vector2<T> GPM::Vector2<T>::normalized() const
 {
-	T magn = Magnitude();
+	const T magnitude = Magnitude();
 
-	if (magn == 0)
-		throw std::logic_error("Vector2::normalized() got a vector2 magnitude of 0");
+	if (magnitude == 0)
+		return zero;
 
-	return { x / magn, y / magn };
+	return { x / magnitude, y / magnitude };
 }
 
 template<typename T>
 constexpr T GPM::Vector2<T>::Magnitude() const
 {
-	return std::sqrt(GPM::Tools::Utils::Pow(x, 2) + GPM::Tools::Utils::Pow(y, 2));
+	return std::sqrt(Tools::Utils::Pow(x, 2) + Tools::Utils::Pow(y, 2));
 }
 
 #pragma endregion
@@ -133,20 +132,20 @@ constexpr T GPM::Vector2<T>::Magnitude() const
 template<typename T>
 constexpr GPM::Vector2<T> GPM::Vector2<T>::normalized(const Vector2<T>& p_vector2)
 {
-	T magn = p_vector2.Magnitude();
-	return Vector2<T>{ p_vector2.x / magn, p_vector2.y / magn };
+	const T magnitude = p_vector2.Magnitude();
+	return Vector2<T>{ p_vector2.x / magnitude, p_vector2.y / magnitude };
 }
 
 template<typename T>
 inline constexpr void GPM::Vector2<T>::Normalize(Vector2<T>& p_vector2)
 {
-	T magn = p_vector2.Magnitude();
+	const T magnitude = p_vector2.Magnitude();
 
-	if (magn == 0)
+	if (magnitude == 0)
 		throw std::logic_error("Vector2::Normalize(Vector2<T>& p_vector2) got a vector2 magnitude of 0");
 
-	p_vector2.x /= magn;
-	p_vector2.y /= magn;
+	p_vector2.x /= magnitude;
+	p_vector2.y /= magnitude;
 }
 
 template<typename T>
@@ -160,17 +159,20 @@ template<typename T>
 template<typename U>
 inline constexpr T GPM::Vector2<T>::Angle(const Vector2<T>& p_vector2Left, const Vector2<U>& p_vector2Right)
 {
-	T magn1 = p_vector2Left.Magnitude();
-	T magn2 = static_cast<T>(p_vector2Right.Magnitude());
+	const T magnitudeLeft = p_vector2Left.Magnitude();
+	const T magnitudeRight = static_cast<T>(p_vector2Right.Magnitude());
 
-	if (magn1 == 0 || magn2 == 0)
-		throw std::logic_error("Vector2::Angle(const Vector2<T>& p_vector2Left, const Vector2<T>& p_vector2Right) got a vector2 magnitude of 0");
+	if (magnitudeLeft == 0 || magnitudeRight == 0)
+	{
+		std::cerr << "Vector2::Angle(const Vector2<T>& p_vector2Left, const Vector2<T>& p_vector2Right) got a vector2 magnitude of 0";
+		return static_cast<T>(0);
+	}
 
 	T dot = static_cast<T>(p_vector2Left.Dot(p_vector2Right));
-	T fraction = dot / (magn1 * magn2);
+	T fraction = dot / (magnitudeLeft * magnitudeRight);
 
 	if (fraction > -1 && fraction < 1)
-		return GPM::Tools::Utils::Arccos(dot / (magn1 * magn2));
+		return GPM::Tools::Utils::Arccos(dot / (magnitudeLeft * magnitudeRight));
 
 	return 0;
 }

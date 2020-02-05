@@ -28,7 +28,7 @@ namespace GPM
         ~Matrix4() = default;
 
         constexpr Matrix4(const Matrix4<T>& p_matrix);
-        constexpr Matrix4(Matrix4<T>&& p_matrix) noexcept;
+        Matrix4(Matrix4<T>&& p_matrix) noexcept;
 
         constexpr Matrix4(const Vector3<T>& p_vector);
 
@@ -130,8 +130,8 @@ namespace GPM
         //TODO clean these
         //methods
         
-        constexpr void SetColumn(int p_column, const Vector4<T>& p_vector);
-        constexpr void SetRow(int p_row, const Vector4<T>& p_vector);
+        constexpr void SetColumn(const int p_column, const Vector4<T>& p_vector);
+        constexpr void SetRow(const int p_row, const Vector4<T>& p_vector);
 
         static T GetMinor(Matrix3<T> p_minor);
 
@@ -292,6 +292,7 @@ namespace GPM
         bool operator!=(const Matrix4<T>& p_matrix) const;
 
 		Matrix4<T>& operator=(const Matrix4<T>& p_matrix);
+		Matrix4<T>& operator=(Matrix4<T>&& p_matrix) noexcept;
     	
         template<typename U>
         Matrix4<T>& operator=(const Matrix4<U>& p_matrix);

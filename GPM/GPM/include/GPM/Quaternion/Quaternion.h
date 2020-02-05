@@ -5,9 +5,12 @@ namespace GPM
 {
 	struct Quaternion final
 	{
-		Vector3<double> axis;
+		
 		//m_w is the real value of quaternion, this will be used to check if the quaternion is pure/identity or not.
 		double w;
+		double x;
+		double y;
+		double z;
 
 		// static const Quaternion identity;
 

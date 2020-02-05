@@ -147,7 +147,7 @@ template<typename T>
 template<typename U>
 constexpr Matrix4<T>& Matrix4<T>::Scale(const Vector3<U>& p_scale)
 {
-	(*this) = CreateScale(p_scale);
+	(*this) *= CreateScale(p_scale);
 
 	return { (*this) };
 }

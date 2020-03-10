@@ -121,13 +121,16 @@ namespace GPM
 
 	inline Quaternion Quaternion::MakeFromEuler(const double p_xAngle, const double p_yAngle, const double p_zAngle)
 	{
-		return MakeFromEuler(Vector3<double>(p_xAngle, p_yAngle, p_zAngle));
+		Quaternion rotation;
+		rotation.SetFromEuler(p_xAngle, p_yAngle, p_zAngle);
+
+		return rotation;
 	}
 	
 	inline Quaternion Quaternion::MakeFromEuler(const Vector3<double>& p_euler)
 	{
 		Quaternion rotation;
-		rotation.SetFromEuler(p_euler);
+		rotation.SetFromEuler(p_euler.x, p_euler.y, p_euler.z);
 		
 		return rotation;
 	}

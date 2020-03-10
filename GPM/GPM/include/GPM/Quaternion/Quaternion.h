@@ -76,16 +76,23 @@ namespace GPM
 		/**
 		 * @brief Construct from euler angles
 		 * @param p_euler A vector representing the euler angle in degree
+		 * @return The quaternion made from euler angles
 		 */
-		inline void MakeFromEuler(const Vector3<double>& p_euler);
+		[[nodiscard]] inline Quaternion MakeFromEuler(const Vector3<double>& p_euler) const;
+		
+		/**
+		 * @brief Set a quaternion from euler angles
+		 * @param p_euler A vector representing the euler angle in degree
+		 */
+		inline void SetFromEuler(const Vector3<double>& p_euler) const;
 
 		/**
-		 * @brief Construct from euler angles
+		 * @brief Set a quaternion from euler angles
 		 * @param p_x The x-angle in degree
 		 * @param p_y The y-angle in degree
 		 * @param p_z The z-angle in degree
 		 */
-		inline void MakeFromEuler(const double p_x, const double p_y, const double p_z);
+		inline void SetFromEuler(const double p_x, const double p_y, const double p_z);
 
 		/**
 		 * @brief Copy assignment

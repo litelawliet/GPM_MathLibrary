@@ -119,12 +119,20 @@ namespace GPM
 		z = sinAngle * p_axis.z;
 	}
 
-	inline void Quaternion::MakeFromEuler(const Vector3<double>& p_euler)
+	inline Quaternion Quaternion::MakeFromEuler(const Vector3<double>& p_euler) const
 	{
-		MakeFromEuler(Vector3<double>(p_euler.x, p_euler.y, p_euler.z));
+		Quaternion rotation;
+		rotation.SetFromEuler(p_euler);
+		
+		return rotation;
 	}
 
-	inline void Quaternion::MakeFromEuler(const double p_x, const double p_y, const double p_z)
+	inline void Quaternion::SetFromEuler(const Vector3<double>& p_euler) const
+	{
+		SetFromEuler(Vector3<double>(p_euler.x, p_euler.y, p_euler.z));
+	}
+
+	inline void Quaternion::SetFromEuler(const double p_x, const double p_y, const double p_z)
 	{
 		double eulerX = Tools::Utils::ToRadians(p_x);
 		double eulerY = Tools::Utils::ToRadians(p_y);

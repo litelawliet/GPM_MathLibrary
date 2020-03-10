@@ -267,6 +267,30 @@ namespace GPM
 		return { (*this) };
 	}
 
+	inline Vector3<float> Quaternion::operator*(const Vector3<float>& p_toMultiply) const
+	{
+		const float num = static_cast<float>(x) * 2.0f;
+		const float num2 = static_cast<float>(y) * 2.0f;
+		const float num3 = static_cast<float>(z) * 2.0f;
+		const float num4 = static_cast<float>(x) * num;
+		const float num5 = static_cast<float>(y) * num2;
+		const float num6 = static_cast<float>(z) * num3;
+		const float num7 = static_cast<float>(x) * num2;
+		const float num8 = static_cast<float>(x) * num3;
+		const float num9 = static_cast<float>(y) * num3;
+		const float num10 = static_cast<float>(w) * num;
+		const float num11 = static_cast<float>(w) * num2;
+		const float num12 = static_cast<float>(w) * num3;
+		Vector3F result;
+		result.x = (1.f - (num5 + num6)) * p_toMultiply.x + (num7 - num12) * p_toMultiply.y + (num8 + num11) *
+			p_toMultiply.z;
+		result.y = (num7 + num12) * p_toMultiply.x + (1.f - (num4 + num6)) * p_toMultiply.y + (num9 - num10) *
+			p_toMultiply.z;
+		result.z = (num8 - num11) * p_toMultiply.x + (num9 + num10) * p_toMultiply.y + (1.f - (num4 + num5)) *
+			p_toMultiply.z;
+		return result;
+	}
+	
 	inline Quaternion Quaternion::Multiply(const Quaternion& p_quaternion) const
 	{
 		Quaternion result;

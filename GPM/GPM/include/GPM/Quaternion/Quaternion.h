@@ -82,8 +82,8 @@ namespace GPM
 		/**
 		 * @brief Construct from euler angles
 		 * @param p_x The x-angle in degree
-		 * @param p_y The x-angle in degree
-		 * @param p_z The x-angle in degree
+		 * @param p_y The y-angle in degree
+		 * @param p_z The z-angle in degree
 		 */
 		inline void MakeFromEuler(const double p_x, const double p_y, const double p_z);
 
@@ -109,21 +109,21 @@ namespace GPM
 		 * @note If the quaternion has no rotation(meaning x,y,z axis values = 0), it's Identity
 		 * @return True or false
 		 */
-		bool IsIdentity() const;
+		[[nodiscard]] bool IsIdentity() const;
 
 		/**
 		 * @brief Check if the quaternion is pure
 		 * @note If the quaternion has no real value(meaning real part = 0), it's pure
 		 * @return True or false
 		 */
-		bool IsPure() const;
+		[[nodiscard]] bool IsPure() const;
 
 		/**
 		 * @brief Check if the quaternion is normalized
 		 * @note A quaternion is normalized if his magnitude is equal to 1
 		 * @return True or false
 		 */
-		bool IsNormalized() const;
+		[[nodiscard]] bool IsNormalized() const;
 
 		/**
 		 * @brief Check is all components between the current quaternion and the other one are equals
@@ -156,7 +156,7 @@ namespace GPM
 		 * @param p_otherQuaternion The other quaternion
 		 * @return The result
 		 */
-		double DotProduct(const Quaternion& p_otherQuaternion) const;
+		[[nodiscard]] double DotProduct(const Quaternion& p_otherQuaternion) const;
 
 		/**
 		 * @brief Return the dot product between the current quaternion and another one
@@ -174,6 +174,9 @@ namespace GPM
 
 		inline Quaternion operator*(const Vector3<double>& p_toMultiply) const;
 		inline Quaternion& operator*=(const Vector3<double>& p_toMultiply);
+
+		inline Vector3<float> operator*(const Vector3<float> & p_toMultiply) const;
+
 
 #pragma endregion
 #pragma endregion
@@ -417,7 +420,7 @@ namespace GPM
 		 * @brief Transform the current quaternion to euler angles in degrees
 		 * @return A vector containing each angles
 		 */
-		Vector3<double> ToEuler() const;
+		[[nodiscard]] Vector3<double> ToEuler() const;
 
 		/**
 		 * @brief Create a quaternion from euler in degrees
@@ -439,7 +442,7 @@ namespace GPM
 		 * @brief Transform the current quaternion to string
 		 * @return The converted string
 		 */
-		std::string ToString() const;
+		[[nodiscard]] std::string ToString() const;
 
 		/**
 		 * @brief Transform a quaternion to string
@@ -452,13 +455,13 @@ namespace GPM
 		 * @brief Return a Matrix3 of double out of the quaternion
 		 * @return The Matrix3<float>
 		 */
-		Matrix3<float> ToMatrix3() const;
+		[[nodiscard]] Matrix3<float> ToMatrix3() const;
 
 		/**
 		 * @brief Return a Matrix4 of double out of the quaternion
 		 * @return The Matrix4<float>
 		 */
-		Matrix4<float> ToMatrix4() const;
+		[[nodiscard]] Matrix4<float> ToMatrix4() const;
 #pragma endregion
 	};
 

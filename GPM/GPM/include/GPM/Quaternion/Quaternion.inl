@@ -119,6 +119,11 @@ namespace GPM
 		z = sinAngle * p_axis.z;
 	}
 
+	inline Quaternion Quaternion::MakeFromEuler(const double p_xAngle, const double p_yAngle, const double p_zAngle)
+	{
+		return MakeFromEuler(Vector3<double>(p_xAngle, p_yAngle, p_zAngle));
+	}
+	
 	inline Quaternion Quaternion::MakeFromEuler(const Vector3<double>& p_euler)
 	{
 		Quaternion rotation;

@@ -75,6 +75,15 @@ namespace GPM
 
 		/**
 		 * @brief Construct from euler angles
+		 * @param p_xAngle The x-angle in degree
+		 * @param p_yAngle The y-angle in degree
+		 * @param p_zAngle The z-angle in degree
+		 * @return The quaternion made from euler angles
+		 */
+		[[nodiscard]] static inline Quaternion MakeFromEuler(const double p_xAngle, const double p_yAngle, const double p_zAngle);
+
+		/**
+		 * @brief Construct from euler angles
 		 * @param p_euler A vector representing the euler angle in degree
 		 * @return The quaternion made from euler angles
 		 */

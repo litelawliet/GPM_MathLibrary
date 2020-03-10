@@ -78,7 +78,7 @@ namespace GPM
 		 * @param p_euler A vector representing the euler angle in degree
 		 * @return The quaternion made from euler angles
 		 */
-		[[nodiscard]] inline Quaternion MakeFromEuler(const Vector3<double>& p_euler) const;
+		[[nodiscard]] static inline Quaternion MakeFromEuler(const Vector3<double>& p_euler);
 		
 		/**
 		 * @brief Set a quaternion from euler angles

@@ -119,7 +119,7 @@ namespace GPM
 		z = sinAngle * p_axis.z;
 	}
 
-	inline Quaternion Quaternion::MakeFromEuler(const Vector3<double>& p_euler) const
+	inline Quaternion Quaternion::MakeFromEuler(const Vector3<double>& p_euler)
 	{
 		Quaternion rotation;
 		rotation.SetFromEuler(p_euler);
